@@ -17,9 +17,11 @@ function App() {
         <Route path="/trips/trip/:tripSlug">
           <TripDetail trips={trips} />
         </Route>
+        {/* <Route path="/trips/:difficulty?"> */}
         <Route path="/trips/:difficulty">
           <TripsList trips={_trips} />
         </Route>
+        {/* delete this route then */}
         <Route path="/trips">
           <TripsList trips={_trips} />
         </Route>
